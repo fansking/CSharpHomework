@@ -75,6 +75,9 @@ namespace program2
                 {
                     break;
                 }
+                else if(! input.Equals("yes")) {
+                    Console.WriteLine("输入格式错误，将继续输入下一条目");
+                }
             }
             return order;
         }
