@@ -115,9 +115,9 @@ namespace WinFrom1
                 nav.MoveToRoot();
 
                 XslCompiledTransform xt = new XslCompiledTransform();
-                xt.Load(@"order.xslt");
+                xt.Load(@"../../order.xslt");
 
-                FileStream outFileStream = File.OpenWrite(@"order.html");
+                FileStream outFileStream = File.OpenWrite(@"../../order.html");
                 XmlTextWriter writer =
                     new XmlTextWriter(outFileStream, System.Text.Encoding.UTF8);
                 xt.Transform(nav, null, writer);
